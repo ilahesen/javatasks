@@ -143,7 +143,7 @@ public class Homework14 {
     }
 
     // Task 9: Count Down from N to 1 (For Loop)
-    // new coe
+    // new code
     // Instruction: Write a program that takes user input for a number N and prints numbers from N down to 1 using a for loop.
     // Expected Result: If the user inputs 5, the output should be "5 4 3 2 1".
     public static void countDownFromNTo1For() {
