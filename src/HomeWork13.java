@@ -6,17 +6,17 @@ public class HomeWork13 {
     // Expected Result: If the user input number is 5, the output should be "The number is positive."
     public static void checkPositiveNumber() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a1= new Scanner(System.in);
         System.out.println("Entered number ");
-        int num = a.nextInt();
+        int num1 = a1.nextInt();
 
 
-        if (num > 0) {
-            System.out.println("The number is positive.");
-        } else if (num < 0) {
-            System.out.println("The number is negative.");
+        if (num1 > 0) {
+            System.out.println("The number is positive. ");
+        } else if (num1 < 0) {
+            System.out.println("The number is negative. ");
         } else {
-            System.out.println("Not positive or neqative.");
+            System.out.println("Not positive or neqative. ");
         }
     }
 
@@ -25,11 +25,14 @@ public class HomeWork13 {
     // Expected Result: If the user input number is 4, the output should be "The number is even."
     public static void checkEvenOrOdd() {
         // Implementation here
-        int num = 4;
-        if (num % 2 == 0) {
-            System.out.println(num + " is even.");
+        Scanner a2 = new Scanner(System.in);
+        System.out.println("Entered  Number");
+        int num2= a2.nextInt();
+
+        if (num2 % 2 == 0) {
+            System.out.println("The number is even. ");
         } else {
-            System.out.println(num + "is odd.");
+            System.out.println(" The number is odd. ");
         }
     }
 
@@ -38,9 +41,9 @@ public class HomeWork13 {
     // Expected Result: If the user input age is 25, the output should be "Adult."
     public static void categorizeAge() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a3 = new Scanner(System.in);
         System.out.println("Enter age");
-        int age = a.nextInt();
+        int age = a3.nextInt();
         if (age >= 0 && age <= 12) {
             System.out.println("Child");
         } else if (age >= 13 && age <= 19) {
@@ -59,9 +62,9 @@ public class HomeWork13 {
     // Expected Result: If the user input day is 3, the output should be "Weekday."
     public static void determineWeekdayOrWeekend() {
         // Implementation here
-        Scanner s = new Scanner(System.in);
-        System.out.println("Entered the day of the week");
-        int day = s.nextInt();
+        Scanner a4 = new Scanner(System.in);
+        System.out.println("Enter the day of the week");
+        int day = a4.nextInt();
         if (day <= 5) {
             System.out.println("Weekday.");
         } else if (day > 5 && day < 8) {
@@ -78,14 +81,16 @@ public class HomeWork13 {
     // Expected Result: If the user input year is 2020, the output should be "Leap year."
     public static void checkLeapYear() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a5 = new Scanner(System.in);
         System.out.println("Enter year");
-        int year = a.nextInt();
+        int year = a5.nextInt();
 
-        if (year / 4 == 0 && year / 400 == 0) {
-            System.out.println("Leap year.");
-        } else if (year / 100 == 0) ;
-        {
+        if (year%4 == 0 ) {
+            if (year%100 != 0 || year%400 == 0 ) {
+                System.out.println("Leap year.");
+            }
+        }
+        else  {
             System.out.println("Not a leap year.");
         }
 
@@ -96,17 +101,16 @@ public class HomeWork13 {
     // Expected Result: If the user input BMI is 22, the output should be "Normal weight."
     public static void categorizeBMI() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a6 = new Scanner(System.in);
         System.out.println("Enter weight");
-        double w = a.nextDouble();
-        if (w <= 18.5) {
+        double d = a6.nextDouble();
+        if (d <= 18.5) {
             System.out.println("Underweight");
-        } else if (w >= 18.5 && w <= 24.9) {
+        } else if (d >= 18.5 && d <= 24.9) {
             System.out.println(" Normal weight");
-        } else if (w >= 25 && w <= 29.9) {
+        } else if (d >= 25 && d <= 29.9) {
             System.out.println("Overweight");
-        } else if (w >= 30) {
-
+        } else if (d >= 30) {
             System.out.println("Obese");
         }
     }
@@ -116,9 +120,9 @@ public class HomeWork13 {
     // Expected Result: If the user input age is 20, the output should be "Eligible to vote."
     public static void checkVotingEligibility() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a7 = new Scanner(System.in);
         System.out.println("Enter age");
-        int age = a.nextInt();
+        int age = a7.nextInt();
         if (age >= 18) {
             System.out.println("Eligible to vote.");
         } else if (age <= 18) {
@@ -131,9 +135,9 @@ public class HomeWork13 {
     // Expected Result: If the user input month is 2, the output should be "28 or 29 days."
     public static void determineDaysInMonth() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a8 = new Scanner(System.in);
         System.out.println("enter month number 1-12 ");
-        int month = a.nextInt();
+        int month = a8.nextInt();
         switch (month) {
             case 1:
             case 3:
@@ -149,9 +153,10 @@ public class HomeWork13 {
             case 9:
             case 11:
                 System.out.println("30 days");
-                break;
+            break;
             case 2:
                 System.out.println("28 or 29 days ");
+            break;
             default:
                 System.out.println("invalid month");
         }
@@ -162,9 +167,9 @@ public class HomeWork13 {
     // Expected Result: If the user input temperature is 25, the output should be "Warm."
     public static void checkTemperature() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a9 = new Scanner(System.in);
         System.out.println("Enter the temperature");
-        int temp = a.nextInt();
+        int temp = a9.nextInt();
         if (temp <= 0) {
             System.out.println("Freezing");
         } else if (temp >= 0 && temp <= 10) {
@@ -183,9 +188,9 @@ public class HomeWork13 {
     // Expected Result: If the user input number is 3, the output should be "Three."
     public static void convertNumberToWord() {
         // Implementation here
-        Scanner a = new Scanner(System.in);
+        Scanner a10 = new Scanner(System.in);
         System.out.println("Enter a number (1-5): ");
-        int num = a.nextInt();
+        int num = a10.nextInt();
         switch (num) {
             case 1:
                 System.out.println("One");
@@ -215,7 +220,7 @@ public class HomeWork13 {
         Scanner letter = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String input = letter.nextLine();
-        switch (input)  {
+            switch (input)  {
             case "aaaa":
                 System.out.println("A");
                 break;
